@@ -1,11 +1,11 @@
 ### webpack构建工程(dev及build)
 
 1. 创建项目文件并用npm初始化
-  a. `mkdir webpack-demo && cd webpack-demo` -> `npm init -y`
+  a. `mkdir webpack-demo` -> `cd webpack-demo` -> `npm init -y`
   b. `mkdir src` -> 新建index.js并编辑 `alert('hello webpack')`
 
-2. 安装webpack及webpack-cli初始化webpack.config.js
-`yarn add webpack webpack-cli -D`->`ni webpack.config.js`
+2. 安装webpack及webpack-cli
+`yarn add webpack webpack-cli -D`
 
 3. 编辑package.json 添加build命令
 在scripts字段添加 `"build": "webpack --mode production"`
@@ -14,6 +14,7 @@
 4. 编辑package.json 添加dev命令
   a. 安装webpack-dev-server `yarn add webpack-dev-server -D`
   b. 创建webpack配置文件 `ni webpack.config.js`
+  c. 安装HtmlWebpackPlugin插件 `yarn add html-webpack-plugin -D`
   c. 编辑配置文件
   ```
   const HtmlPlugin = require('html-webpack-plugin')
