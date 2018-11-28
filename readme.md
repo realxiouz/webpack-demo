@@ -15,7 +15,7 @@
   a. 安装webpack-dev-server `yarn add webpack-dev-server -D`
   b. 创建webpack配置文件 `ni webpack.config.js`
   c. 安装HtmlWebpackPlugin插件 `yarn add html-webpack-plugin -D`
-  c. 编辑配置文件
+  d. 编辑配置文件
   ```
   const HtmlPlugin = require('html-webpack-plugin')
   module.exports = {
@@ -24,7 +24,7 @@
     ]
   }
   ```
-  d. 在scripts字段添加  `"dev": "webpack-dev-server --mode development --open --port 9527"`
+  e. 在scripts字段添加  `"dev": "webpack-dev-server --mode development --open --port 9527"`
 执行`yarn run dev`会默认打开浏览器
 
 ### 构建React项目
@@ -37,7 +37,7 @@
  b. 工程根目录新建`.babelrc`并编辑
  ```
  {
-   presets:['@babel/preset-env', '@babel/preset-react']
+   "presets": ["@babel/preset-env", "@babel/preset-react"]
  }
  ```
 
